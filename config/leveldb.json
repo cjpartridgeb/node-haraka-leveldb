@@ -1,0 +1,7 @@
+{
+	location: "./mail",
+	options: {
+		keyEncoding: 'utf8',
+		valueEncoding: 'json'
+	}
+}
