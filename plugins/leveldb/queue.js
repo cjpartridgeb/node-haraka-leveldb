@@ -19,7 +19,8 @@ exports.hook_queue = function(next, connection) {
     to: headers['to'] ? headers['to'][0] : null,
     from: headers['from'] ? headers['from'][0] : null,
     subject: headers['subject'] ? headers['subject'][0] : null,
-    headers: headers
+    headers: headers,
+    bodies: bodies
   };
 
   for(var i=0; i<recipients.length; i++) {
